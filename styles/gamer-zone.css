@@ -71,6 +71,7 @@ nav {
 
 .fa-youtube{
     color:#F61C0D;
+    margin:0 10px;
 }
 
 .fa-tiktok{}
@@ -85,10 +86,40 @@ nav {
 
 /* Responsive Styles  */
 /* Mobile Devices */
-@media screen and (max-width:576px){}
+@media screen and (max-width:576px){
+    nav,
+    ul {
+        flex-direction: column;
+      }
+
+      .nav-logo-container{
+        margin-bottom:62px;
+      }
+
+      .nav-links-container li{
+        margin:0;
+      }
+
+      li.follow-container{
+        margin-top:62px;
+        max-height: 25px;
+    }
+
+    .nav-links-container :nth-child(1){
+        margin-bottom:36px;
+    }
+
+}
 
 
 
 
 /* Tablet or Medium Devices  */
-@media screen and (min-width:576px) and (max-width:768px){}
+@media screen and (min-width:576px) and (max-width:768px){
+    nav{
+        flex-direction: column;
+      }
+      .nav-links-container{
+        margin-top:30px;
+      }
+}
