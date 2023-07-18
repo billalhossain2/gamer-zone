@@ -1,0 +1,94 @@
+/* reset default styles  */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* shared styles  */
+body {
+  font-family: "Work Sans", sans-serif;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* ================header styles================  */
+header {
+    margin-top:38px;
+}
+
+/* nav styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-logo-image {
+}
+
+.nav-logo-title {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.logo-frist-letter {
+  color: #ff42a5;
+}
+
+.nav-links-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links-container li {
+  list-style-type: none;
+  margin-right: 30px;
+}
+
+.nav-links-container li a {
+  text-decoration: none;
+  color: #3c354f;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.follow-container {
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.1);
+  padding:17px 24px;
+}
+
+.follow-us-txt {
+}
+
+.fa-youtube{
+    color:#F61C0D;
+}
+
+.fa-tiktok{}
+
+
+
+
+
+
+
+
+
+/* Responsive Styles  */
+/* Mobile Devices */
+@media screen and (max-width:576px){}
+
+
+
+
+/* Tablet or Medium Devices  */
+@media screen and (min-width:576px) and (max-width:768px){}
