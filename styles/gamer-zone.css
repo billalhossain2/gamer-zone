@@ -473,6 +473,20 @@ nav {
     max-width: 350px;
     text-align: center;
   }
+
+  .play-game {
+    flex-direction: column-reverse;
+    margin-bottom: 200px;
+    gap:30px;
+  }
+
+  .play-game-content {
+    text-align: center;
+  }
+
+  .instant-play{
+    margin-bottom:100px;
+  }
 }
 
 /* Tablet or Medium Devices  */
@@ -515,5 +529,19 @@ nav {
   .instant-play-content {
     max-width: 350px;
     text-align: center;
+  }
+
+  .play-game {
+    flex-direction: column-reverse;
+    margin-bottom: 200px;
+    gap:30px;
+  }
+
+  .play-game-content {
+    text-align: center;
+  }
+
+  .instant-play{
+    margin-bottom:150px;
   }
 }
