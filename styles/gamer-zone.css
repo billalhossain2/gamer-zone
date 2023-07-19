@@ -11,8 +11,8 @@ body {
   margin: 0 auto;
 }
 
-main{
-  padding:0 10px;
+main {
+  padding: 0 10px;
 }
 
 /* ================header styles================  */
@@ -291,17 +291,59 @@ nav {
   margin-top: 16px;
 }
 
-.overlay svg{
+.overlay svg {
   cursor: pointer;
 }
 
-.game-image-container:hover .overlay{
-  border:solid #ff42a5 3px;
-  opacity:1;
+.game-image-container:hover .overlay {
+  border: solid #ff42a5 3px;
+  opacity: 1;
 }
 
-
-
+/* ===================instant play section styles======================  */
+.instant-play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:200px;
+  margin-bottom:100px;
+}
+.instant-play-content {
+  max-width: 350px;
+  text-align: right;
+}
+.instant-play-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px; /* 125% */
+  margin-bottom: 10px;
+}
+.play-instantly {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.instant-play-description {
+  color: #534c64;
+  font-family: Work Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+}
+.instant-play-image-container {
+  position: relative;
+}
+.instant-play-image-container img {
+  width: 100%;
+  height: auto;
+}
+.baby-image {
+  position: absolute;
+  max-width:40%;
+  left:-20%;
+  top:65%;
+}
 /* Responsive Styles  */
 /* Mobile Devices */
 @media screen and (max-width: 576px) {
@@ -365,8 +407,8 @@ nav {
     font-size: 15px;
   }
 
-  .game-item figcaption{
-    margin-top:0;
+  .game-item figcaption {
+    margin-top: 0;
   }
   .game-container {
     display: grid;
@@ -397,8 +439,8 @@ nav {
     text-align: center;
   }
 
-  .game-item figcaption{
-    margin-top:0;
+  .game-item figcaption {
+    margin-top: 0;
   }
   .game-container {
     display: grid;
