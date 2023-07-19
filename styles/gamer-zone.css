@@ -13,7 +13,7 @@ body {
 
 /* ================header styles================  */
 header {
-    margin-top:38px;
+  margin-top: 38px;
 }
 
 /* nav styles */
@@ -21,6 +21,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
 
 .nav-logo-container {
@@ -63,22 +65,94 @@ nav {
 .follow-container {
   border-radius: 8px;
   background: rgba(11, 2, 35, 0.1);
-  padding:17px 24px;
+  padding: 17px 24px;
 }
 
 .follow-us-txt {
 }
 
-.fa-youtube{
-    color:#F61C0D;
-    margin:0 10px;
+.fa-youtube {
+  color: #f61c0d;
+  margin: 0 10px;
 }
 
-.fa-tiktok{}
+.fa-tiktok {
+}
 
+/* banner styles  */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 70px;
+  gap:200px;
+}
 
+.banner-title {
+  color: #0b0223;
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.banner-content {
 
+}
+.banner-goat-text {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 95px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.banner-content-option-list {
+  list-style: none;
+  color: #534c64;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: lowercase;
+  margin-bottom: 40px;
+}
 
+.banner-content-option-list li {
+  margin-bottom: 17px;
+}
+.fa-play {
+  color: #ff42a5;
+  border: solid 3px #000;
+  padding: 8px;
+  border-radius: 50%;
+  text-align: center;
+}
+.fa-download {
+  color: #ff42a5;
+}
+.fa-user-group {
+}
+.sign-in-btn,
+.go-rogue-btn {
+  border-radius: 48px;
+  background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 0;
+  padding: 21px 40px;
+}
+.go-rogue-btn {
+  background: #4ec5f7;
+}
+.banner-image-container {
+}
+.banner-image-container img {
+  width: 100%;
+  height: auto;
+}
+
+/* gamer section styles  */
 
 
 
@@ -86,40 +160,65 @@ nav {
 
 /* Responsive Styles  */
 /* Mobile Devices */
-@media screen and (max-width:576px){
-    nav,
-    ul {
-        flex-direction: column;
-      }
+@media screen and (max-width: 576px) {
+  nav,
+  ul{
+    flex-direction: column;
+  }
 
-      .nav-logo-container{
-        margin-bottom:62px;
-      }
+  .nav-logo-container {
+    margin-bottom: 62px;
+  }
 
-      .nav-links-container li{
-        margin:0;
-      }
+  .nav-links-container li {
+    margin: 0;
+  }
 
-      li.follow-container{
-        margin-top:62px;
-        max-height: 25px;
-    }
+  li.follow-container {
+    margin-top: 62px;
+    max-height: 25px;
+  }
 
-    .nav-links-container :nth-child(1){
-        margin-bottom:36px;
-    }
+  .nav-links-container :nth-child(1) {
+    margin-bottom: 36px;
+  }
 
+  .banner{
+    flex-direction: column-reverse;
+    gap:50px;
+  }
+
+  .banner-goat-text{
+    font-size: 60px;
+  }
+
+  .banner-title{
+    font-size: 40px;
+  }
+
+  .sign-in-btn,
+.go-rogue-btn{
+    padding:10px 20px;
+    font-size: 15px;
+}
+.go-rogue-btn{
+    margin-left:20px;
+}
+ .banner-content-option-list{
+    font-size: 16px;
+ }
 }
 
-
-
-
 /* Tablet or Medium Devices  */
-@media screen and (min-width:576px) and (max-width:768px){
-    nav{
-        flex-direction: column;
-      }
-      .nav-links-container{
-        margin-top:30px;
-      }
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  nav,
+  .banner{
+    flex-direction: column;
+  }
+  .nav-links-container {
+    margin-top: 30px;
+  }
+  .banner{
+    gap:80px;
+  }
 }
