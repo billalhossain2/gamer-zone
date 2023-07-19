@@ -449,17 +449,17 @@ table.careers-list td {
 
 /* ===========================game types section styles==========================  */
 .game-types {
-  margin-bottom:100px;
+  margin-bottom: 100px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap:30px;
+  gap: 30px;
 }
 
 .game-type-item {
   display: flex;
   align-items: center;
   gap: 5px;
-  padding:3px;
+  padding: 3px;
 }
 
 .game-type-item {
@@ -468,17 +468,84 @@ table.careers-list td {
   font-weight: 600;
 }
 
-.game-type-item img{
-  width:100%;
+.game-type-item img {
+  width: 100%;
   height: auto;
 }
 
-div.game-type-item:hover{
-  border-radius: 50px;
+div.game-type-item:hover {
+  border-radius: 60px;
   background: #fff;
-  border:#f948b2 2px solid;
-  color:#ff42a5 !important;
+  border: #f948b2 2px solid;
+  color: #ff42a5 !important;
   cursor: pointer;
+}
+
+/* footer styles  */
+footer {
+  background: #0b0223;
+}
+.footer-logo-info {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  padding-top: 120px;
+  margin-bottom: 66px;
+}
+.footer-logo-info img {
+}
+.footer-title {
+  font-size: 45px;
+  font-weight: 700;
+  color: #fff;
+}
+.letter-g {
+  color: #ff42a5;
+}
+.footer-menu-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 56px;
+}
+.footer-menu-list li a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer-social-icon-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 74px;
+}
+.footer-social-icon-list li a {
+  color: #fff;
+}
+.footer-terms-list {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 28px;
+}
+.footer-terms-list li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.copyright-info {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom:130px;
 }
 
 /* Responsive Styles  */
@@ -613,24 +680,24 @@ div.game-type-item:hover{
     font-size: 12px;
   }
 
-  .game-types{
+  .game-types {
     flex-direction: column;
   }
 
   .game-types {
-    font-size:10px;
-    margin-bottom:100px;
+    font-size: 10px;
+    margin-bottom: 100px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap:5px;
-    row-gap:20px;
+    column-gap: 5px;
+    row-gap: 20px;
   }
-  .game-type-item{
-    padding:0;
+  .game-type-item {
+    padding: 0;
     font-size: 10px;
   }
-  .game-type-item img{
-    width:30%;
+  .game-type-item img {
+    width: 30%;
     height: auto;
   }
 }
@@ -715,20 +782,20 @@ div.game-type-item:hover{
   }
 
   .game-types {
-    font-size:10px;
-    margin-bottom:100px;
+    font-size: 10px;
+    margin-bottom: 100px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap:5px;
-    row-gap:20px;
+    column-gap: 5px;
+    row-gap: 20px;
   }
 
-  .game-type-item img{
-    width:50%;
+  .game-type-item img {
+    width: 50%;
     height: auto;
   }
 
-  .game-type-item{
+  .game-type-item {
     font-size: 16px;
   }
 }
