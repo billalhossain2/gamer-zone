@@ -156,11 +156,13 @@ nav {
 
 /* gamer section styles  */
 .gamer {
+  background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 70px;
   margin-bottom: 100px;
+  padding:0 100px;
 }
 .gamer-image-container {
 }
@@ -469,7 +471,7 @@ table.careers-list td {
 }
 
 .game-type-item img {
-  width: 100%;
+  max-width: 90%;
   height: auto;
 }
 
@@ -566,7 +568,7 @@ footer {
   }
 
   .nav-logo-container {
-    margin-bottom: 62px;
+    margin-bottom: 30px;
   }
 
   .nav-links-container li {
@@ -574,7 +576,7 @@ footer {
   }
 
   li.follow-container {
-    margin-top: 62px;
+    margin-top: 30px;
     max-height: 25px;
   }
 
@@ -610,6 +612,7 @@ footer {
   .gamer {
     gap: 10px;
     margin-top: 70px;
+    padding:0;
   }
   .gamer-content {
     text-align: center;
@@ -699,6 +702,41 @@ footer {
   .game-type-item img {
     width: 30%;
     height: auto;
+  }
+
+  .footer-menu-list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 56px;
+  }
+
+  .footer-menu-list li a {
+    font-size: 14px;
+  }
+
+  .footer-social-icon-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 74px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-terms-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 28px;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5px;
   }
 }
 
@@ -797,5 +835,24 @@ footer {
 
   .game-type-item {
     font-size: 16px;
+  }
+
+  .footer-menu-list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-bottom: 56px;
+  }
+
+  .footer-menu-list li a {
+    font-size: 18px;
+  }
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5px;
   }
 }
