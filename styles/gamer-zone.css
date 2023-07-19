@@ -7,18 +7,13 @@
 /* shared styles  */
 body {
   font-family: "Work Sans", sans-serif;
-  max-width: 1140px;
-  margin: 0 auto;
 }
 
-main {
-  padding: 0 10px;
+.left-right-equal-space {
+  margin: 0 100px;
 }
 
 /* ================header styles================  */
-header {
-  margin-top: 38px;
-}
 
 /* nav styles */
 nav {
@@ -27,6 +22,7 @@ nav {
   align-items: center;
   background: #fff;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+  padding: 20px 100px;
 }
 
 .nav-logo-container {
@@ -70,12 +66,14 @@ nav {
   border-radius: 8px;
   background: rgba(11, 2, 35, 0.1);
   padding: 17px 24px;
+  height: auto;
+  display: flex;
 }
 
 .follow-us-txt {
 }
 
-.banner-content ul li i.fa-youtube {
+.nav-links-container li i.fa-youtube {
   color: #f61c0d;
   margin: 0 10px;
 }
@@ -351,22 +349,24 @@ nav {
   justify-content: center;
   align-items: center;
   margin-bottom: 200px;
-  gap:160px;
+  gap: 160px;
 }
 
 .play-game-image-container {
   position: relative;
 }
-.play-game-image-container img{
+.play-game-image-container img {
   width: 100%;
   height: auto;
 }
-.angry-baby{
+
+.angry-baby {
   position: absolute;
   max-width: 40%;
-  right:-15%;
-  bottom:-15%;
+  right: -20%;
+  top: 65%;
 }
+
 .play-game-content {
   max-width: 426px;
 }
@@ -374,7 +374,7 @@ nav {
   font-size: 48px;
   font-weight: 700;
   line-height: 60px; /* 125% */
-  margin-bottom:15px;
+  margin-bottom: 15px;
 }
 
 .play-games,
@@ -392,13 +392,110 @@ nav {
   line-height: 30px; /* 166.667% */
 }
 
+/* ===========================carees section styles===========================  */
+.carees-section {
+  background: #ff42a5;
+  padding: 50px 0 50px 100px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.careers-content {
+  max-width: 500px;
+  text-align: justify;
+}
+.carees-title {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px; /* 125% */
+}
+.carees-description {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+  margin: 30px 0;
+}
+table.careers-list {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 40px; /* 200% */
+  width: 100%;
+}
+
+table.careers-list td {
+  text-align: right;
+}
+.careers-image-container {
+}
+.careers-image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.career-button {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 48px;
+  background: #fff;
+  color: #ff42a5;
+  margin: 20px 0;
+}
+
+/* ===========================game types section styles==========================  */
+.game-types {
+  margin-bottom:100px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap:30px;
+}
+
+.game-type-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding:3px;
+}
+
+.game-type-item {
+  color: #0b0223;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.game-type-item img{
+  width:100%;
+  height: auto;
+}
+
+div.game-type-item:hover{
+  border-radius: 50px;
+  background: #fff;
+  border:#f948b2 2px solid;
+  color:#ff42a5 !important;
+  cursor: pointer;
+}
+
 /* Responsive Styles  */
 /* Mobile Devices */
 @media screen and (max-width: 576px) {
+  .left-right-equal-space {
+    margin-left: 0;
+    margin-right: 0;
+  }
   nav,
   ul,
   .gamer {
     flex-direction: column;
+  }
+
+  nav {
+    padding: 20px 0;
   }
 
   .nav-logo-container {
@@ -477,20 +574,78 @@ nav {
   .play-game {
     flex-direction: column-reverse;
     margin-bottom: 200px;
-    gap:30px;
+    gap: 30px;
   }
 
   .play-game-content {
     text-align: center;
   }
 
-  .instant-play{
+  .angry-baby {
+    position: absolute;
+    max-width: 40%;
+    left: 30%;
+    top: 65%;
+  }
+
+  .instant-play {
+    margin-bottom: 100px;
+  }
+
+  .carees-section {
+    background: #ff42a5;
+    padding-left: 0;
+    padding: 50px 20px;
+    flex-direction: column;
+  }
+
+  table.careers-list td,
+  th {
+    font-size: 14px;
+  }
+
+  .carees-description {
+    font-size: 14px;
+  }
+
+  .career-button {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  .game-types{
+    flex-direction: column;
+  }
+
+  .game-types {
+    font-size:10px;
     margin-bottom:100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap:5px;
+    row-gap:20px;
+  }
+  .game-type-item{
+    padding:0;
+    font-size: 10px;
+  }
+  .game-type-item img{
+    width:30%;
+    height: auto;
   }
 }
 
 /* Tablet or Medium Devices  */
 @media screen and (min-width: 576px) and (max-width: 768px) {
+  .left-right-equal-space {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  nav {
+    padding: 20px 0;
+  }
+
   nav,
   .banner {
     flex-direction: column;
@@ -534,14 +689,46 @@ nav {
   .play-game {
     flex-direction: column-reverse;
     margin-bottom: 200px;
-    gap:30px;
+    gap: 30px;
+  }
+
+  .angry-baby {
+    position: absolute;
+    max-width: 40%;
+    left: 50%;
+    top: 65%;
   }
 
   .play-game-content {
     text-align: center;
   }
 
-  .instant-play{
-    margin-bottom:150px;
+  .instant-play {
+    margin-bottom: 150px;
+  }
+
+  .carees-section {
+    background: #ff42a5;
+    padding-left: 0;
+    padding: 50px 20px;
+    flex-direction: column;
+  }
+
+  .game-types {
+    font-size:10px;
+    margin-bottom:100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap:5px;
+    row-gap:20px;
+  }
+
+  .game-type-item img{
+    width:50%;
+    height: auto;
+  }
+
+  .game-type-item{
+    font-size: 16px;
   }
 }
