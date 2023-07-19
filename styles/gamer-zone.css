@@ -214,7 +214,8 @@ nav {
 /* Mobile Devices */
 @media screen and (max-width: 576px) {
   nav,
-  ul {
+  ul,
+  .gamer {
     flex-direction: column;
   }
 
@@ -259,6 +260,17 @@ nav {
   .banner-content-option-list {
     font-size: 16px;
   }
+  .gamer{
+    gap:10px;
+    margin-top:70px;
+  }
+  .gamer-content{
+    text-align: center;
+  }
+  .gamer-button{
+    padding:18px 20px;
+    font-size: 15px;
+  }
 }
 
 /* Tablet or Medium Devices  */
@@ -272,5 +284,13 @@ nav {
   }
   .banner {
     gap: 80px;
+  }
+  .gamer{
+    flex-direction: column-reverse;
+    gap:20px;
+    margin-top:80px;
+  }
+  .gamer-content{
+    text-align: center;
   }
 }
