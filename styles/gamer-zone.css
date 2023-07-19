@@ -85,7 +85,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   margin-top: 70px;
-  gap:200px;
+  gap: 200px;
 }
 
 .banner-title {
@@ -95,7 +95,6 @@ nav {
   text-transform: uppercase;
 }
 .banner-content {
-
 }
 .banner-goat-text {
   background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
@@ -153,16 +152,69 @@ nav {
 }
 
 /* gamer section styles  */
+.gamer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+  margin-bottom:100px;
+}
+.gamer-image-container {
+}
+.gamer-image-container img {
+  width: 100%;
+  height: auto;
+}
+.gamer-content {
+  max-width: 550px;
+  text-align: right;
+}
+.gamer-title {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.gamer-description {
+  color: #534c64;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+  margin-bottom: 10px;
+}
+.gamer-button {
+  border-radius: 48px;
+  background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 0;
+  padding: 21px 40px;
+  margin-bottom: 20px;
+}
+.gamer-footer-txt {
+  color: #534c64;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 45px; /* 187.5% */
+}
 
-
-
-
+.unleash {
+  color: #534c64;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 45px;
+}
 
 /* Responsive Styles  */
 /* Mobile Devices */
 @media screen and (max-width: 576px) {
   nav,
-  ul{
+  ul {
     flex-direction: column;
   }
 
@@ -183,42 +235,42 @@ nav {
     margin-bottom: 36px;
   }
 
-  .banner{
+  .banner {
     flex-direction: column-reverse;
-    gap:50px;
+    gap: 50px;
   }
 
-  .banner-goat-text{
+  .banner-goat-text {
     font-size: 60px;
   }
 
-  .banner-title{
+  .banner-title {
     font-size: 40px;
   }
 
   .sign-in-btn,
-.go-rogue-btn{
-    padding:10px 20px;
+  .go-rogue-btn {
+    padding: 10px 20px;
     font-size: 15px;
-}
-.go-rogue-btn{
-    margin-left:20px;
-}
- .banner-content-option-list{
+  }
+  .go-rogue-btn {
+    margin-left: 20px;
+  }
+  .banner-content-option-list {
     font-size: 16px;
- }
+  }
 }
 
 /* Tablet or Medium Devices  */
 @media screen and (min-width: 576px) and (max-width: 768px) {
   nav,
-  .banner{
+  .banner {
     flex-direction: column;
   }
   .nav-links-container {
     margin-top: 30px;
   }
-  .banner{
-    gap:80px;
+  .banner {
+    gap: 80px;
   }
 }
