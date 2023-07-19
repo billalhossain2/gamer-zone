@@ -344,6 +344,8 @@ nav {
   left:-20%;
   top:65%;
 }
+
+
 /* Responsive Styles  */
 /* Mobile Devices */
 @media screen and (max-width: 576px) {
@@ -415,7 +417,22 @@ nav {
     grid-template-columns: 1fr;
     gap: 24px;
   }
+  .instant-play {
+   flex-direction: column;
+    gap:50px;
+    padding:0 50px;
+  }
+
+  .instant-play-content {
+    max-width: 350px;
+    text-align: center;
+  }
 }
+
+
+
+
+
 
 /* Tablet or Medium Devices  */
 @media screen and (min-width: 576px) and (max-width: 768px) {
@@ -447,4 +464,15 @@ nav {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
   }
+
+  .instant-play {
+    flex-direction: column;
+     gap:60px;
+     padding:0 30px;
+   }
+ 
+   .instant-play-content {
+     max-width: 350px;
+     text-align: center;
+   }
 }
