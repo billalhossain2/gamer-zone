@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+:root{
+  --primary-text-color:#534c64;
+}
+
 /* ============================shared styles===============================  */
 body {
   font-family: "Work Sans", sans-serif;
@@ -111,7 +115,7 @@ nav {
 }
 .banner-content-option-list {
   list-style: none;
-  color: #534c64;
+  color: var(--primary-text-color);
   font-size: 20px;
   font-weight: 500;
   text-transform: lowercase;
@@ -184,7 +188,7 @@ nav {
   margin-bottom: 10px;
 }
 .gamer-description {
-  color: #534c64;
+  color: var(--primary-text-color);
   font-size: 18px;
   font-weight: 400;
   line-height: 30px; /* 166.667% */
@@ -236,7 +240,7 @@ nav {
   font-weight: 700;
 }
 .online-game-description {
-  color: #534c64;
+  color: var(--primary-text-color);
   text-align: center;
   font-size: 18px;
   font-weight: 400;
@@ -325,7 +329,7 @@ nav {
   -webkit-text-fill-color: transparent;
 }
 .instant-play-description {
-  color: #534c64;
+  color: var(--primary-text-color);
   font-family: Work Sans;
   font-size: 18px;
   font-weight: 400;
@@ -333,15 +337,17 @@ nav {
 }
 .instant-play-image-container {
   position: relative;
+  display: flex;
+  justify-content: end;
 }
 .instant-play-image-container img {
-  width: 100%;
+  width: 83%;
   height: auto;
 }
 .baby-image {
   position: absolute;
   max-width: 40%;
-  left: -20%;
+  left: 0;
   top: 65%;
 }
 
@@ -357,15 +363,16 @@ nav {
 .play-game-image-container {
   position: relative;
 }
+
 .play-game-image-container img {
-  width: 100%;
+  width: 85%;
   height: auto;
 }
 
 .angry-baby {
   position: absolute;
   max-width: 40%;
-  right: -20%;
+  right: 0;
   top: 65%;
 }
 
@@ -388,7 +395,7 @@ nav {
 }
 
 .play-game-description {
-  color: #534c64;
+  color: var(--primary-text-color);
   font-size: 18px;
   font-weight: 400;
   line-height: 30px; /* 166.667% */
@@ -458,8 +465,6 @@ div.careers-list h5{
   margin-bottom: 100px;
   max-width: 1140px;
   margin:100px auto;
-  /* display: grid;
-  grid-template-columns: repeat(5, 1fr); */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -644,7 +649,7 @@ footer {
   .instant-play {
     flex-direction: column;
     gap: 50px;
-    padding: 0 50px;
+    padding: 0 10px;
   }
 
   .instant-play-content {
@@ -656,17 +661,26 @@ footer {
     flex-direction: column-reverse;
     margin-bottom: 200px;
     gap: 30px;
+    padding:10px;
   }
 
   .play-game-content {
     text-align: center;
   }
 
+  .play-game-image-container{
+    width: 100%;
+    position: relative;
+  }
+  .play-game-image-container img{
+    width:82%;
+  }
+
   .angry-baby {
     position: absolute;
-    max-width: 40%;
-    left: 30%;
-    top: 65%;
+    width: 40%;
+    right: 0;
+    top: 62%;
   }
 
   .instant-play {
@@ -813,13 +827,6 @@ footer {
     flex-direction: column-reverse;
     margin-bottom: 200px;
     gap: 30px;
-  }
-
-  .angry-baby {
-    position: absolute;
-    max-width: 40%;
-    left: 50%;
-    top: 65%;
   }
 
   .play-game-content {
