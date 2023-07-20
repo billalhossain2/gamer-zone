@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-/* shared styles  */
+/* ============================shared styles===============================  */
 body {
   font-family: "Work Sans", sans-serif;
 }
@@ -13,9 +13,9 @@ body {
   margin: 0 100px;
 }
 
-/* ================header styles================  */
+/* ================================header styles===============================  */
 
-/* nav styles */
+/* ===========header's nav styles============ */
 nav {
   display: flex;
   justify-content: space-between;
@@ -81,7 +81,7 @@ nav {
 .fa-tiktok {
 }
 
-/* banner styles  */
+/* =================header's banner styles================  */
 .banner {
   display: flex;
   justify-content: space-between;
@@ -154,7 +154,7 @@ nav {
   height: auto;
 }
 
-/* gamer section styles  */
+/* ==================gamer section styles===================  */
 .gamer {
   background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
   display: flex;
@@ -421,7 +421,7 @@ nav {
 }
 table.careers-list {
   color: #fff;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 40px; /* 200% */
   width: 100%;
@@ -430,11 +430,10 @@ table.careers-list {
 table.careers-list td {
   text-align: right;
 }
-.careers-image-container {
-}
+
 .careers-image-container img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .career-button {
@@ -503,8 +502,7 @@ footer {
   padding-top: 120px;
   margin-bottom: 66px;
 }
-.footer-logo-info img {
-}
+
 .footer-title {
   font-size: 45px;
   font-weight: 700;
