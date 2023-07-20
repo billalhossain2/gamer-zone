@@ -452,10 +452,17 @@ table.careers-list td {
 /* ===========================game types section styles==========================  */
 .game-types {
   margin-bottom: 100px;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  max-width: 1140px;
+  margin:100px auto;
+  /* display: grid;
+  grid-template-columns: repeat(5, 1fr); */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
 }
+
 
 .game-type-item {
   display: flex;
@@ -468,6 +475,7 @@ table.careers-list td {
   color: #0b0223;
   font-size: 16px;
   font-weight: 600;
+  border: transparent 2px solid;
 }
 
 .game-type-item img {
@@ -483,7 +491,7 @@ div.game-type-item:hover {
   cursor: pointer;
 }
 
-/* footer styles  */
+/* =================================footer styles=================================  */
 footer {
   background: #0b0223;
 }
@@ -820,10 +828,9 @@ footer {
   }
 
   .game-types {
-    font-size: 10px;
     margin-bottom: 100px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 5px;
     row-gap: 20px;
   }
