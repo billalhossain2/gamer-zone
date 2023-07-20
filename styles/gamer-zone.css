@@ -419,17 +419,22 @@ nav {
   line-height: 30px; /* 166.667% */
   margin: 30px 0;
 }
-table.careers-list {
+div.careers-list{
   color: #fff;
   font-size: 16px;
   font-weight: 600;
   line-height: 40px; /* 200% */
   width: 100%;
 }
-
-table.careers-list td {
-  text-align: right;
+div.careers-list div{
+  display: flex;
+  justify-content: space-between;
+  gap:30px;
 }
+div.careers-list h5{
+  font-size: 16.5px;
+}
+
 
 .careers-image-container img {
   width: 100%;
@@ -675,11 +680,6 @@ footer {
     flex-direction: column;
   }
 
-  table.careers-list td,
-  th {
-    font-size: 14px;
-  }
-
   .carees-description {
     font-size: 14px;
   }
@@ -687,6 +687,18 @@ footer {
   .career-button {
     padding: 8px 16px;
     font-size: 12px;
+  }
+
+  div.careers-list div{
+    flex-direction: column;
+    gap:0px;
+  }
+  div.careers-list div p{
+    margin-bottom:10px;
+    border-bottom:#e0378f solid 1px;
+  }
+  div.careers-list h5{
+    font-size: 16.5px;
   }
 
   .game-types {
